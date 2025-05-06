@@ -1,6 +1,6 @@
 Feature: User Registration
 
-@Regression
+@Registration @Regression @UI @Critical
   Scenario: Registering a new user with valid data
     Given User is on the registration page
     When User fills in all required registration details

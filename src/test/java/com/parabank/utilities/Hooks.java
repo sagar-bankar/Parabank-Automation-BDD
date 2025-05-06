@@ -1,5 +1,9 @@
 package com.parabank.utilities;
 
+import static com.parabank.utilities.Webdriver_Utils.driver;
+import static com.parabank.utilities.Webdriver_Utils.getDriver;
+import static com.parabank.utilities.Webdriver_Utils.quitDriver;
+
 import com.parabank.pages.HomePage;
 import com.parabank.pages.LoginAccountPage;
 import com.parabank.pages.MyAccountPage;
@@ -7,10 +11,6 @@ import com.parabank.pages.RegisterPage;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-
-import static com.parabank.utilities.Webdriver_Utils.*;
-
-import org.apache.log4j.Logger;
 
 public class Hooks {
 

@@ -10,9 +10,9 @@ import com.parabank.utilities.Hooks;
 
 import io.cucumber.java.en.*;
 
-public class TC_003_User_Registration {
+public class RegistrationSteps {
 
-	static Logger log = Logger.getLogger(TC_003_User_Registration.class);
+	static Logger log = Logger.getLogger(RegistrationSteps.class);
 
 	@Given("User is on the registration page")
 	public void user_is_on_the_registration_page() {

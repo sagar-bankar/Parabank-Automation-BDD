@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.bdd.parabank</groupId>
+  <groupId>com.Parabank_Automation.BDD</groupId>
   <artifactId>Parabank_Automation.BDD</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
@@ -69,6 +69,20 @@
 		    <version>1.2.17</version>
 		</dependency>
 		
+		
+		<dependency>
+		    <groupId>com.aventstack</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>5.0.9</version> <!-- or latest -->
+		</dependency>
+
+		<dependency>
+		  <groupId>org.projectlombok</groupId>
+		  <artifactId>lombok</artifactId>
+		  <version>1.18.30</version> <!-- Use latest -->
+		  <scope>provided</scope>
+		</dependency>
+
 
   </dependencies>
 

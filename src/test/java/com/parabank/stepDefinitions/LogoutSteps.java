@@ -16,8 +16,8 @@ import com.parabank.utilities.Hooks;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class TC_004_Logout_from_the_application {
-	public static Logger log = Logger.getLogger(TC_004_Logout_from_the_application.class);
+public class LogoutSteps {
+	public static Logger log = Logger.getLogger(LogoutSteps.class);
 
 	@When("User clicks on the {string} link")
 	public void user_clicks_on_the_link(String linkText) throws InterruptedException, IOException {

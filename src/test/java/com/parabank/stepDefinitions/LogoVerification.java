@@ -6,7 +6,7 @@ import com.parabank.utilities.Hooks;
 
 import io.cucumber.java.en.Then;
 
-public class TC_006_Verify_Logo {
+public class LogoVerification {
 
 	@Then("the ParaBank logo should be visible")
 	public void the_para_bank_logo_should_be_visible() {
