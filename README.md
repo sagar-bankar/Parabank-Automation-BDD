@@ -1,4 +1,4 @@
-# 🧪 Parabank Automation BDD Framework
+# 🧪 Parabank Automation Behavior-Driven Development (BDD) Framework
 
 A Behavior-Driven Development (BDD) framework built to automate testing of the Parabank web application using **Cucumber**, **Selenium WebDriver**, and **Maven** with Java.
 
