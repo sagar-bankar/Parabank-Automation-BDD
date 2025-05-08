@@ -8,23 +8,23 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ExtentReportManager {
-    private static ExtentReports extent;
+	private static ExtentReports extent;
 
-    public static ExtentReports getInstance() {
-        if (extent == null) {
-            // Add timestamp
-            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-            String reportPath = System.getProperty("user.dir") + "/Reports/ExtentReport_" + timestamp + ".html";
+	public static ExtentReports getInstance() {
+		if (extent == null) {
+			// Add timestamp
+			String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+			String reportPath = System.getProperty("user.dir") + "/Reports/ExtentReport_" + timestamp + ".html";
 
-            ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
-            spark.config().setTheme(Theme.DARK);
-            extent = new ExtentReports();
-            extent.attachReporter(spark);
+			ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
+			spark.config().setTheme(Theme.DARK);
+			extent = new ExtentReports();
+			extent.attachReporter(spark);
 
-            extent.setSystemInfo("OS", "Windows");
-            extent.setSystemInfo("Environment", "QA");
-            extent.setSystemInfo("Tester", "SAGAR BANKAR");
-        }
-        return extent;
-    }
+			extent.setSystemInfo("OS", "Windows");
+			extent.setSystemInfo("Environment", "QA");
+			extent.setSystemInfo("Tester", "SAGAR BANKAR");
+		}
+		return extent;
+	}
 }

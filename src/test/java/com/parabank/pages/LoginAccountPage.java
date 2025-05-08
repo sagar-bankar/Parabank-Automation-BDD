@@ -7,34 +7,29 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginAccountPage {
-	
+
 	WebDriver driver;
-	public LoginAccountPage(WebDriver driver)
-	{
-		//this.driver=driver;
-		
+
+	public LoginAccountPage(WebDriver driver) {
+		// this.driver=driver;
+
 		PageFactory.initElements(driver, this);
 	}
-	
-	//Locators
-	@FindBy(xpath="//p[contains(text(),'Your account was created successfully. You are now')]") 
-	@CacheLookup private WebElement yourAccountWasCreatedSucce;
-	
-	//Return Webelement
-	
+
+	// Locators
+	@FindBy(xpath = "//p[contains(text(),'Your account was created successfully. You are now')]")
+	@CacheLookup
+	private WebElement yourAccountWasCreatedSucce;
+
+	// Return Webelement
+
 	public WebElement getyourAccountWasCreatedSucce() {
 		return yourAccountWasCreatedSucce;
 	}
-	
-	
-	
-	
-	
-	//Actions
+
+	// Actions
 
 	public String getSuccessMessage() {
 		return yourAccountWasCreatedSucce.getText();
 	}
-	
-	
 }

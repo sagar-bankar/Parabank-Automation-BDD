@@ -74,21 +74,19 @@ public class LoginSteps {
 		String expectedMessage2 = "An internal error has occurred and has been logged.";
 		String actualMessage = Hooks.home.pleaseEnterAUsernameAndPa(); // consider renaming this method for clarity
 
-		log.info("expectedMessage1: "+expectedMessage1);
-		log.info("expectedMessage2: "+expectedMessage2);
-		
-		if(actualMessage==expectedMessage1) {
-			
+		log.info("expectedMessage1: " + expectedMessage1);
+		log.info("expectedMessage2: " + expectedMessage2);
+
+		if (actualMessage == expectedMessage1) {
+
 			Assert.assertEquals("Error message mismatch!", expectedMessage1, actualMessage);
 			log.info("Error message validation passed");
-		}
-		else if ( actualMessage==expectedMessage2){
+		} else if (actualMessage == expectedMessage2) {
 			Assert.assertEquals("Error message mismatch!", expectedMessage2, actualMessage);
 			log.info("Error message validation passed");
+		} else {
+			log.info("Error message validation passed" + actualMessage);
 		}
-		else {
-			log.info("Error message validation passed"+actualMessage);
-		}
-		
+
 	}
 }

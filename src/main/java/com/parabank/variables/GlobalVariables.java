@@ -1,4 +1,4 @@
-package com.bdd.variables;
+package com.parabank.variables;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
